@@ -1,1 +1,9 @@
 
+flow_id,src_ip,dst_ip,src_port,dst_port,protocol,packets,bytes,duration,inter_arrival_mean,dst_count,dst_port_count,dns_query_length,dns_entropy,tls_ja3,scenario
+FLOW-001,10.0.0.10,10.0.0.20,51512,443,TCP,45,28500,12.4,0.28,1,1,0,0.0,normal_tls,Normal Traffic
+FLOW-002,10.0.0.11,10.0.0.20,40123,80,TCP,25000,18000000,10.0,0.0004,1,1,0,0.0,none,SYN Flood
+FLOW-003,10.0.0.12,10.0.0.30,49221,53,UDP,8500,7200000,60.0,0.007,2,1,42,4.2,none,DGA / DNS Tunnelling
+FLOW-004,10.0.0.13,10.0.0.40,51001,443,TCP,320,240000,120.0,15.0,1,1,0,0.0,suspicious_ja3,C2 Beaconing
+FLOW-005,10.0.0.14,10.0.0.50,53000,443,TCP,900,45000000,300.0,0.33,1,1,0,0.0,unknown_tls,Data Exfiltration
+FLOW-006,10.0.0.15,10.0.0.60,42000,22,TCP,1800,1350000,30.0,0.016,25,18,0,0.0,none,Reconnaissance
+FLOW-007,10.0.0.16,10.0.0.70,43000,443,TCP,12000,9000000,20.0,0.0017,1,1,0,0.0,malicious_ja3,Encrypted Malware
